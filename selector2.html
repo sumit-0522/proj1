@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector : CSS combinators</title>
+    <style>
+        div p{
+            color: blue
+        }
+        div h1{
+            color: brown;
+        }
+        .div > p{
+            background-color: rgb(161, 91, 4); 
+        }
+         .text + p {
+       font-size:25px;
+       background-color:blueviolet;
+        } 
+        
+       
+        div p::first-letter{
+            color: brown;
+            font-size: 30px;
+            font-weight: 700;
+        }
+         ul{
+            display:list-item;
+
+
+        }
+         ul li::nth-child(5){
+            border-radius:10px;
+        }
+
+        ul li::first-letter {
+            font: size 25px; color: aqua ;
+
+        }
+       
+
+       
+        .para::after{
+            content: "read more";
+            color: blue;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body >
+    <div class="text">
+        <h1 align="center">HTML unit-2 CSS selector</h1> <br>
+        <a href=" ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quaerat adipisci quibusdam obcaecati pariatur explicabo ratione deserunt earum inventore eligendi? Eligendi odit amet, consectetur consequatur fuga reprehenderit architecto eos. Atque.</a>
+    
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, labore temporibus.<br> Deleniti beatae aperiam commodi qui natus repellat soluta porro autem provident? Pariatur ex dignissimos fugiat suscipit distinctio voluptas veritatis!</p>
+      </div> 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem nihil officia itaque. Consequatur illum rem nostrum iure alias eligendi dignissimos. Nobis quos libero obcaecati minima ratione aliquam inventore error!</p>
+       <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque obcaecati rem earum inventore dignissimos. Sunt, sit vitae eaque repellendus molestiae animi nam quaerat rem voluptates, maiores, autem quia excepturi est!</p>
+    </div>
+<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos similique atque corporis.<br> Molestiae, omnis atque tenetur earum quidem totam cum culpa possimus quod quia dolor, nemo rem sint eum?</p>
+   <h2>Third Para</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam beatae molestias, fugiat nihil ipsam nam? Sit illum doloremque voluptatibus id, cum eveniet! Sed, a nesciunt. Atque a molestias quisquam?</p>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+        <li>service</li>
+        <li>xyz</li>
+        
+    </ul>
+</body>
+</html>
